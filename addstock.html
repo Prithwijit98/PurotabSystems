@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Purotab | Admin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.jpeg" rel="icon">
+  <link href="assets/img/favicon.jpeg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+<center>
+	<br>
+
+  <h3><b>Add Stock</b></h3>
+
+  <form style="" name="addstock">
+
+  	<label for="product" class="formlabel">Product : </label>
+  <select id="product" class="forminput">
+  <option value="Item1">Item1</option>
+  <option value="Item2">Item2</option>
+  <option value="Item3">Item3</option>
+  <option value="Item4">Item4</option>
+</select>
+<br>
+
+<label for="pchoice" class="formlabel">Type : </label>
+<span class="forminput" id="typechoice">
+<input type="radio" id="bycarton" name="choice" value="carton"  style="width: 3.5%;" checked  onclick="typeoption(this)">
+  <label for="bycarton"  style="width: 10%;text-align: left;">By Carton</label>&emsp;
+  <input type="radio" id="bypiece" name="choice" value="piece"  style="width: 4%;"  onclick="typeoption(this)">
+  <label for="bypiece"   style="width: 10%;text-align: left;">By Piece</label>
+</span>
+  <br>
+
+<label for="num" class="formlabel" id="numof" >No. of Cartons : </label>
+<input type="number" class="forminput" id="num">
+<br>
+
+<label for="whouse" class="formlabel">Warehouse : </label>
+<select id="whouse" name="warehouse" class="forminput">
+  <option value="Item1">Item1</option>
+  <option value="Item2">Item2</option>
+  <option value="Item3">Item3</option>
+  <option value="Item4">Item4</option>
+</select>
+<br>
+
+<label for="date" class="formlabel">Date : </label>
+<input type="date" id="date" class="forminput">
+<br>
+
+<label for="w" class="formlabel">Waybill / Challan no. : </label>
+<input type="text" id="w" class="forminput">
+<br>
+
+<label for="comment" class="formlabel">Comment : </label>
+<input type="text" id="comment" class="forminput" style="line-height: 70px;" >
+<br>
+<span class="forminput" >
+<input type="reset" class="button" >&emsp;
+<input type="submit" class="button">
+</span>
+
+</form>
+  <center>
+</body>
+<script type="text/javascript">
+  function typeoption(choice) {
+    var typechoice=document.getElementById('typechoice');
+    var numof=document.getElementById('numof');
+    if(choice.value=="piece")
+      numof.innerHTML="No. of Pieces : ";
+    else if(choice.value=="carton")
+      numof.innerHTML="No. of Cartons : ";
+    
+  }
+</script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Purotab | Admin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.jpeg" rel="icon">
+  <link href="assets/img/favicon.jpeg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+<center>
+	<br>
+
+  <h3><b>View Stock</b></h3>
+
+  <input type="button" class="button" id="byproduct" onclick="byproduct()" value="By Product">&emsp;
+  <input type="button" class="button" id="bywarehouse" onclick="bywarehouse()" value="By Warehouse">
+
+   <iframe src="viewbyproduct.html" width="100%" height="300" frameBorder="0" id="viewoption" style="margin-top: 1%;">
+  
+    </iframe>
+
+  <center>
+</body>
+
+<script type="text/javascript">
+  //var byproduct=document.getElementById('byproduct');
+  //var bywarehouse=document.getElementById('bywarehouse');
+
+  var viewoption=document.getElementById('viewoption');
+
+  function byproduct()
+  {
+      viewoption.src="viewbyproduct.html";
+  }
+
+  function bywarehouse()
+  {
+      viewoption.src="viewbywarehouse.html";
+  }
+
+</script>
+
+</html>
